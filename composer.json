@@ -1,0 +1,24 @@
+{
+    "name": "vinicius/omnipay-cielo-braspag",
+    "description": "Cielo/Braspag Sdk Omnipay",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "omnipay/common": "dev-master"
+    },
+    "require-dev": {
+        "omnipay/tests": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius",
+            "email": "vinyvicente@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": { "Omnipay\\" : "src/" }
+    }
+}
