@@ -8,19 +8,6 @@ use Omnipay\Common\Message\RequestInterface;
 abstract class CommonGateway extends AbstractGateway
 {
     /**
-     * @var string
-     */
-    protected $name;
-
-    /**
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    /**
      * @param string $merchantId
      * @return CommonGateway
      */

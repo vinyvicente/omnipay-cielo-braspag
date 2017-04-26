@@ -7,7 +7,10 @@ use Omnipay\CommonGateway;
 class Gateway extends CommonGateway
 {
     /**
-     * @var string
+     * @return string
      */
-    protected $name = 'Braspag';
+    public function getName(): string
+    {
+        return 'Braspag';
+    }
 }
