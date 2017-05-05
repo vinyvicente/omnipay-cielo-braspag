@@ -4,6 +4,7 @@ namespace Omnipay;
 
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\RequestInterface;
+use Omnipay\Message\AuthorizeRequest;
 
 abstract class CommonGateway extends AbstractGateway
 {
@@ -42,6 +43,7 @@ abstract class CommonGateway extends AbstractGateway
 
     public function authorize(array $options = []): RequestInterface
     {
+        return $this->createRequest(AuthorizeRequest::class, $options);
     }
 
     public function completeAuthorize(array $options = []): RequestInterface
